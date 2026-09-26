@@ -1,0 +1,52 @@
+/* Shared styles. Every page uses this one file. */
+:root {
+  --paper: #f6f5ef;
+  --surface: #ffffff;
+  --ink: #203c35;
+  --muted: #586b63;
+  --line: #d7dfd5;
+  --accent: #275d48;
+  --soft: #e9eee3;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: Arial, sans-serif; line-height: 1.65; }
+a { color: inherit; text-underline-offset: 4px; }
+img { display: block; width: 100%; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { line-height: 1.15; }
+h1 { margin-bottom: 22px; font-family: Georgia, serif; font-size: clamp(2.7rem, 6vw, 5.2rem); font-weight: 400; letter-spacing: -2px; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.3rem; }
+:focus-visible { outline: 3px solid #b65b25; outline-offset: 5px; }
+.container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
+.skip-link { position: absolute; top: -100px; left: 20px; padding: 10px; background: white; z-index: 10; }
+.skip-link:focus { top: 10px; }
+/* Task 0: horizontal alignment, vertical centering and gaps with Flexbox. */
+.site-header { display: flex; justify-content: space-between; align-items: center; gap: 24px; min-height: 100px; border-bottom: 1px solid var(--line); }
+.logo { display: flex; align-items: center; gap: 10px; font-size: 1.3rem; font-weight: 700; text-decoration: none; white-space: nowrap; }
+.logo-mark { display: flex; align-items: center; justify-content: center; width: 32px; height: 32px; border-radius: 50%; background: var(--accent); color: white; font-size: 1rem; }
+.nav-list { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.nav-list a { display: block; padding: 9px 13px; border-radius: 6px; font-size: .9rem; text-decoration: none; }
+.nav-list a:hover { background: var(--soft); }
+.nav-list a[aria-current="page"] { background: var(--accent); color: white; }
+.page-intro { padding: 64px 0 36px; max-width: 770px; }
+.eyebrow { margin-bottom: 18px; font-size: .75rem; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.lead { max-width: 610px; color: var(--muted); font-size: 1.1rem; }
+.button { display: inline-block; padding: 11px 20px; border: 1px solid var(--accent); border-radius: 5px; background: var(--accent); color: white; font: inherit; font-size: .9rem; text-align: center; text-decoration: none; transition: background .2s; }
+.button:hover { background: #183f30; }
+.section-heading { margin: 35px 0 22px; }
+.site-footer { margin-top: 64px; padding: 25px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+.home-visual { margin: 0; position: relative; overflow: hidden; border-radius: 12px; background: #d5e0d5; }
+.home-visual img { height: 320px; object-fit: cover; }
+.home-visual figcaption { position: absolute; bottom: 22px; left: 24px; background: var(--paper); border-radius: 4px; padding: 8px 15px; font-size: .85rem; }
+.task-links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+@media (max-width: 760px) {
+  .site-header { flex-direction: column; align-items: flex-start; gap: 15px; padding: 20px 0; }
+  .nav-list { gap: 4px; }
+  .nav-list a { padding: 8px 10px; }
+  .page-intro { padding-top: 40px; }
+  .home-visual img { height: 240px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition: none !important; }
+}

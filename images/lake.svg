@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title">
+  <title id="title">Quiet lake: an original landscape illustration</title>
+  <rect width="800" height="500" fill="#dce9ed"/>
+  <circle cx="562" cy="110" r="48" fill="#f2dab0"/>
+  <path d="M0 340 L180 134 L355 315 L530 169 L800 320 V500 H0Z" fill="#9db5b8"/>
+  <path d="M0 380 Q170 253 365 370 T800 335 V500 H0Z" fill="#46696b"/>
+  <path d="M0 450 Q210 370 430 435 T800 420 V500 H0Z" fill="#dce9ed" opacity=".25"/>
+  
+  
+  
+</svg>

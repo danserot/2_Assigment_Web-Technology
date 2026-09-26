@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" role="img" aria-labelledby="title">
+  <title id="title">Desert light: an original landscape illustration</title>
+  <rect width="800" height="500" fill="#f4dfc6"/>
+  <circle cx="534" cy="110" r="48" fill="#fff1c7"/>
+  <path d="M0 340 L180 143 L355 315 L530 178 L800 320 V500 H0Z" fill="#d69b70"/>
+  <path d="M0 380 Q170 261 365 370 T800 335 V500 H0Z" fill="#a96242"/>
+  <path d="M0 450 Q210 370 430 435 T800 420 V500 H0Z" fill="#f4dfc6" opacity=".25"/>
+  
+  
+  
+</svg>
