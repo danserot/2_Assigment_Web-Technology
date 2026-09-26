@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio page. Assignment 2: responsive layouts with CSS Flexbox and Grid." />
+    <title>Portfolio | Field Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header container">
+      <a class="logo" href="index.html"
+        ><span class="logo-mark" aria-hidden="true">F</span> Field Notes<span
+          aria-hidden="true"
+          >.</span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">00 / Home</a></li>
+          <li><a href="cards.html">01 / Cards</a></li>
+          <li><a href="layout.html">02 / Layout</a></li>
+          <li><a href="gallery.html">03 / Gallery</a></li>
+          <li><a href="portfolio.html" aria-current="page">04 / Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main" class="container">
+      <div class="page-intro">
+        <p class="eyebrow">Assignment 02 &nbsp; / &nbsp; Task 04 / Portfolio</p>
+        <h1>Work with room to breathe.</h1>
+        <p class="lead">
+          A small selection of layout studies, collected in one clear and flexible workspace.
+        </p>
+      </div>
+
+      <div class="portfolio-layout">
+        <section class="projects" aria-labelledby="projects-title">
+          <div class="portfolio-heading">
+            <p class="eyebrow">SELECTED WORK</p>
+            <h2 id="projects-title">Recent studies</h2>
+          </div>
+          <div class="project-list">
+            <article class="project-card">
+              <span class="card-number">01 / FLEXBOX</span>
+              <h3>Places to pause</h3>
+              <p>Equal-height landscape cards with actions aligned at the bottom of every card.</p>
+              <a class="button" href="cards.html">View project &rarr;</a>
+            </article>
+            <article class="project-card">
+              <span class="card-number">02 / GRID AREAS</span>
+              <h3>Everything in its place</h3>
+              <p>A field journal arranged with named grid areas for a calm, readable rhythm.</p>
+              <a class="button" href="layout.html">View project &rarr;</a>
+            </article>
+            <article class="project-card">
+              <span class="card-number">03 / CSS GRID</span>
+              <h3>Views worth keeping</h3>
+              <p>Nine landscape illustrations arranged in a responsive gallery of equal columns.</p>
+              <a class="button" href="gallery.html">View project &rarr;</a>
+            </article>
+          </div>
+        </section>
+
+        <aside class="portfolio-sidebar" aria-labelledby="about-title">
+          <p class="eyebrow">ABOUT THE WORK</p>
+          <h2 id="about-title">Simple systems, thoughtful details.</h2>
+          <p>
+            These studies explore how Flexbox and CSS Grid can make a small website feel structured without feeling rigid.
+          </p>
+          <dl class="portfolio-facts">
+            <div><dt>Focus</dt><dd>Layout &amp; rhythm</dd></div>
+            <div><dt>Tools</dt><dd>HTML &amp; CSS</dd></div>
+            <div><dt>Status</dt><dd>Assignment 02</dd></div>
+          </dl>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer container">
+      Field Notes &middot; Artem Khloptsev &middot; Web Technologies &middot; Assignment 02
+    </footer>
+  </body>
+</html>
