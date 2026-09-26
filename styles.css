@@ -50,3 +50,14 @@ h3 { font-size: 1.3rem; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
 }
+
+/* Task 1: equal-height cards in a wrapping Flexbox row. */
+.card-row { display: flex; flex-wrap: wrap; align-items: stretch; gap: 24px; }
+.card { display: flex; flex-direction: column; flex: 1 1 260px; min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); transition: transform .2s, box-shadow .2s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px #203c3512; }
+.card > img { height: 210px; object-fit: cover; }
+.card-body { display: flex; flex-direction: column; flex: 1; align-items: flex-start; padding: 26px; }
+.card-body p { color: var(--muted); }
+.card-body .button { margin-top: auto; }
+.card-number { margin-bottom: 14px; color: var(--muted); font-size: .75rem; letter-spacing: 1px; }
+.note { margin-top: 28px; padding: 20px 24px; border-left: 3px solid var(--accent); background: var(--soft); color: var(--muted); }
