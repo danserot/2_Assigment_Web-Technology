@@ -1,35 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Grid page layout. Assignment 2: responsive layouts with CSS Flexbox and Grid.">
-  <title>Grid page layout | Field Notes</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <header class="site-header container">
-    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">F</span> Field Notes<span aria-hidden="true">.</span></a>
-    <nav aria-label="Main navigation">
-      <ul class="nav-list">
-        <li><a href="index.html">00 / Home</a></li>
-        <li><a href="cards.html">01 / Cards</a></li>
-        <li><a href="layout.html" aria-current="page">02 / Layout</a></li>
-        <li><a href="gallery.html">03 / Gallery</a></li>
-        <li><a href="portfolio.html">04 / Portfolio</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main id="main" class="container">
-    <div class="page-intro"><p class="eyebrow">Assignment 02 &nbsp; / &nbsp; Task 02 / Grid areas</p><h1>Everything in its place.</h1><p class="lead">A small travel journal arranged with named CSS Grid areas. Header above, notes to the left, stories to the right.</p></div>
-    <div class="layout-grid">
-      <header class="layout-header"><p class="eyebrow">HEADER / A FIELD JOURNAL</p><h2>A day outside</h2><p>Small observations from a slower afternoon.</p></header>
-      <aside class="layout-sidebar" aria-label="Journal navigation"><p class="eyebrow">SIDEBAR</p><h2>On this page</h2><nav aria-label="Journal sections"><ul class="sidebar-links"><li><a href="#morning">Morning walk</a></li><li><a href="#afternoon">By the water</a></li><li><a href="#packing">What to bring</a></li></ul></nav></aside>
-      <article class="layout-content"><p class="eyebrow">MAIN CONTENT</p><section id="morning"><h2>Start with the path ahead.</h2><p>The best part of a walk is having time to notice things: the shape of a hill, the shade of a tree, the changing light.</p><img src="images/forest.svg" alt="Two pine trees standing among green forest hills" width="800" height="500"></section><section id="afternoon"><h3>Find a spot by the water</h3><p>Take a break, open a notebook and sketch the horizon. There is no need to fill every page.</p></section><section id="packing"><h3>Keep it simple</h3><ul><li>A notebook and a pencil</li><li>A bottle of water</li><li>Comfortable walking shoes</li></ul></section></article>
-      <footer class="layout-footer"><p><b>FOOTER</b> &nbsp; / &nbsp; End of the journal. <a href="gallery.html">See the landscape collection &rarr;</a></p></footer>
-    </div>
-  </main>
-  <footer class="site-footer container">Field Notes &middot; Artem Khloptsev &middot; Web Technologies &middot; Assignment 02</footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Grid page layout. Assignment 2: responsive layouts with CSS Flexbox and Grid." />
+    <title>Grid page layout | Field Notes</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header container">
+      <a class="logo" href="index.html"
+        ><span class="logo-mark" aria-hidden="true">F</span> Field Notes<span
+          aria-hidden="true"
+          >.</span
+        ></a
+      >
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">00 / Home</a></li>
+          <li><a href="cards.html">01 / Cards</a></li>
+          <li><a href="layout.html" aria-current="page">02 / Layout</a></li>
+          <li><a href="gallery.html">03 / Gallery</a></li>
+          <li><a href="portfolio.html">04 / Portfolio</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main id="main" class="container">
+      <div class="page-intro">
+        <p class="eyebrow">
+          Assignment 02 &nbsp; / &nbsp; Task 02 / Grid areas
+        </p>
+        <h1>Everything in its place.</h1>
+        <p class="lead">
+          A small travel journal arranged with named CSS Grid areas. Header
+          above, notes to the left, stories to the right.
+        </p>
+      </div>
+      <div class="layout-grid">
+        <header class="layout-header">
+          <p class="eyebrow">HEADER / A FIELD JOURNAL</p>
+          <h2>A day outside</h2>
+          <p>Small observations from a slower afternoon.</p>
+        </header>
+        <aside class="layout-sidebar" aria-label="Journal navigation">
+          <p class="eyebrow">SIDEBAR</p>
+          <h2>On this page</h2>
+          <nav aria-label="Journal sections">
+            <ul class="sidebar-links">
+              <li><a href="#morning">Morning walk</a></li>
+              <li><a href="#afternoon">By the water</a></li>
+              <li><a href="#packing">What to bring</a></li>
+            </ul>
+          </nav>
+        </aside>
+        <article class="layout-content">
+          <p class="eyebrow">MAIN CONTENT</p>
+          <section id="morning">
+            <h2>Start with the path ahead.</h2>
+            <p>
+              The best part of a walk is having time to notice things: the shape
+              of a hill, the shade of a tree, the changing light.
+            </p>
+            <img
+              src="images/forest.svg"
+              alt="Two pine trees standing among green forest hills"
+              width="800"
+              height="500" />
+          </section>
+          <section id="afternoon">
+            <h3>Find a spot by the water</h3>
+            <p>
+              Take a break, open a notebook and sketch the horizon. There is no
+              need to fill every page.
+            </p>
+          </section>
+          <section id="packing">
+            <h3>Keep it simple</h3>
+            <ul>
+              <li>A notebook and a pencil</li>
+              <li>A bottle of water</li>
+              <li>Comfortable walking shoes</li>
+            </ul>
+          </section>
+        </article>
+        <footer class="layout-footer">
+          <p>
+            <b>FOOTER</b> &nbsp; / &nbsp; End of the journal.
+            <a href="gallery.html">See the landscape collection &rarr;</a>
+          </p>
+        </footer>
+      </div>
+    </main>
+    <footer class="site-footer container">
+      Field Notes &middot; Artem Khloptsev &middot; Web Technologies &middot;
+      Assignment 02
+    </footer>
+  </body>
 </html>
