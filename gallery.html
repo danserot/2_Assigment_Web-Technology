@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Image gallery. Assignment 2: responsive layouts with CSS Flexbox and Grid.">
+  <title>Image gallery | Field Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="logo" href="index.html"><span class="logo-mark" aria-hidden="true">F</span> Field Notes<span aria-hidden="true">.</span></a>
+    <nav aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="index.html">00 / Home</a></li>
+        <li><a href="cards.html">01 / Cards</a></li>
+        <li><a href="layout.html">02 / Layout</a></li>
+        <li><a href="gallery.html" aria-current="page">03 / Gallery</a></li>
+        <li><a href="portfolio.html">04 / Portfolio</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main" class="container">
+    <div class="page-intro"><p class="eyebrow">Assignment 02 &nbsp; / &nbsp; Task 03 / CSS Grid gallery</p><h1>Views worth keeping.</h1><p class="lead">Nine original landscape illustrations. Hover over an image or focus it with the Tab key to reveal its title.</p></div>
+    <section class="gallery" aria-label="Landscape collection">
+      <figure class="gallery-item" id="mountains" tabindex="0" aria-label="Mountain morning"><img src="images/mountains.svg" alt="Mountain morning, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 01</span>Mountain morning</figcaption></figure>
+      <figure class="gallery-item" id="lake" tabindex="0" aria-label="Quiet lake"><img src="images/lake.svg" alt="Quiet lake, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 02</span>Quiet lake</figcaption></figure>
+      <figure class="gallery-item" id="desert" tabindex="0" aria-label="Desert light"><img src="images/desert.svg" alt="Desert light, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 03</span>Desert light</figcaption></figure>
+      <figure class="gallery-item" id="forest" tabindex="0" aria-label="Forest trail"><img src="images/forest.svg" alt="Forest trail, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 04</span>Forest trail</figcaption></figure>
+      <figure class="gallery-item" id="coast" tabindex="0" aria-label="Coastal escape"><img src="images/coast.svg" alt="Coastal escape, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 05</span>Coastal escape</figcaption></figure>
+      <figure class="gallery-item" id="sunset" tabindex="0" aria-label="Evening hills"><img src="images/sunset.svg" alt="Evening hills, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 06</span>Evening hills</figcaption></figure>
+      <figure class="gallery-item" id="valley" tabindex="0" aria-label="Green valley"><img src="images/valley.svg" alt="Green valley, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 07</span>Green valley</figcaption></figure>
+      <figure class="gallery-item" id="winter" tabindex="0" aria-label="Winter peaks"><img src="images/winter.svg" alt="Winter peaks, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 08</span>Winter peaks</figcaption></figure>
+      <figure class="gallery-item" id="night" tabindex="0" aria-label="Under the stars"><img src="images/night.svg" alt="Under the stars, a layered landscape illustration" width="800" height="500" loading="lazy"><figcaption><span>LANDSCAPE / 09</span>Under the stars</figcaption></figure>
+    </section>
+    <p class="note">Nine images, three equal columns, consistent gaps. On smaller screens the gallery changes to two columns, then one.</p>
+  </main>
+  <footer class="site-footer container">Field Notes &middot; Artem Khloptsev &middot; Web Technologies &middot; Assignment 02</footer>
+</body>
+</html>

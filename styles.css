@@ -61,3 +61,30 @@ h3 { font-size: 1.3rem; }
 .card-body .button { margin-top: auto; }
 .card-number { margin-bottom: 14px; color: var(--muted); font-size: .75rem; letter-spacing: 1px; }
 .note { margin-top: 28px; padding: 20px 24px; border-left: 3px solid var(--accent); background: var(--soft); color: var(--muted); }
+
+/* Task 2: named Grid areas, explicit columns and rows. */
+.layout-grid { display: grid; grid-template-columns: 240px minmax(0, 1fr); grid-template-rows: auto 1fr auto; grid-template-areas: "header header" "sidebar content" "footer footer"; gap: 20px; }
+.layout-header { grid-area: header; padding: 28px; border-radius: 9px; background: var(--accent); color: white; }
+.layout-header h2 { margin-bottom: 8px; }
+.layout-header p, .layout-footer p { margin-bottom: 0; }
+.layout-sidebar { grid-area: sidebar; padding: 26px; border-radius: 9px; background: var(--soft); }
+.sidebar-links { display: flex; flex-direction: column; gap: 12px; padding: 0; list-style: none; }
+.layout-content { grid-area: content; min-width: 0; padding: 30px; border: 1px solid var(--line); border-radius: 9px; background: white; }
+.layout-content img { max-height: 250px; margin: 24px 0; border-radius: 6px; object-fit: cover; }
+.layout-content section + section { margin-top: 28px; }
+.layout-footer { grid-area: footer; padding: 20px 28px; border: 1px solid var(--line); border-radius: 9px; }
+/* Task 3: nine images in equal-width columns and equal-height rows. */
+.gallery { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-auto-rows: 240px; gap: 20px; }
+.gallery-item { position: relative; margin: 0; overflow: hidden; border-radius: 8px; scroll-margin-top: 24px; }
+.gallery-item img { height: 100%; object-fit: cover; transition: transform .25s; }
+.gallery-item figcaption { position: absolute; inset: auto 0 0; padding: 38px 20px 18px; background: linear-gradient(transparent, #10251fe6); color: white; opacity: 0; transform: translateY(8px); transition: opacity .25s, transform .25s; }
+.gallery-item:hover figcaption, .gallery-item:focus figcaption, .gallery-item:target figcaption { opacity: 1; transform: translateY(0); }
+.gallery-item:hover img { transform: scale(1.04); }
+.gallery-item:target { outline: 3px solid var(--accent); outline-offset: 4px; }
+.gallery-item figcaption span { display: block; font-size: .75rem; letter-spacing: 1px; }
+@media (max-width: 760px) {
+  .layout-grid { grid-template-columns: minmax(0, 1fr); grid-template-rows: auto auto 1fr auto; grid-template-areas: "header" "sidebar" "content" "footer"; }
+  .gallery { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-auto-rows: 210px; }
+}
+@media (max-width: 480px) { .gallery { grid-template-columns: minmax(0, 1fr); } }
+@media (hover: none) { .gallery-item figcaption { opacity: 1; transform: none; } }
